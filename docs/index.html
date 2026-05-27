@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cache-man Documentation</title>
+  <meta name="description" content="A lightweight, zero‑dependency, type‑safe in‑memory TTL cache library for Node.js and browsers." />
+  <style>
+    :root {
+      --bg:#1a1a1a;
+      --fg:#e0e0e0;
+      --accent:#ff6f61;
+      --card:#2b2b2b;
+    }
+    body {margin:0;font-family:"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6;}
+    a {color:var(--accent);text-decoration:none;}
+    a:hover {text-decoration:underline;}
+    header {padding:2rem;text-align:center;background:linear-gradient(135deg,var(--accent),#c0345e);color:#fff;}
+    header h1 {margin:0;font-size:2.5rem;}
+    .container {max-width:960px;margin:auto;padding:1rem;}
+    .card {background:var(--card);border-radius:8px;padding:1.2rem;margin:1rem 0;box-shadow:0 4px 8px rgba(0,0,0,.3);}
+    pre {background:#111;padding:0.8rem;border-radius:4px;overflow:auto;}
+    code {color:#ff9;}
+    .badge img {margin-right:4px;vertical-align:middle;}
+    @media (prefers-color-scheme: light) {
+      :root {--bg:#fafafa;--fg:#222;--card:#fff;}
+      header {background:linear-gradient(135deg,var(--accent),#ff8a80);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>cache-man ⚡️</h1>
+    <p>Zero‑dependency, type‑safe TTL cache for Node.js & browsers</p>
+    <div class="badge">
+      <a href="https://www.npmjs.com/package/@rawatvaibhavdev/cache-man" target="_blank"><img src="https://img.shields.io/npm/v/%40rawatvaibhavdev%2Fcache-man.svg?style=flat-rounded" alt="npm version"/></a>
+      <a href="https://github.com/VaibhavRawat27/cache-man/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/npm/l/%40rawatvaibhavdev%2Fcache-man.svg?style=flat-rounded" alt="license"/></a>
+      <a href="https://bundlephobia.com/package/%40rawatvaibhavdev%2Fcache-man" target="_blank"><img src="https://img.shields.io/bundlephobia/minzip/%40rawatvaibhavdev%2Fcache-man?style=flat-rounded" alt="bundle size"/></a>
+      <a href="https://www.npmjs.com/package/%40rawatvaibhavdev%2Fcache-man?activeTab=code" target="_blank"><img src="https://img.shields.io/npm/types/%40rawatvaibhavdev%2Fcache-man.svg?style=flat-rounded" alt="types"/></a>
+    </div>
+  </header>
+  <main class="container">
+    <section class="card">
+      <h2>📦 Installation</h2>
+      <pre><code># npm
+npm i @rawatvaibhavdev/cache-man
+
+# yarn
+yarn add @rawatvaibhavdev/cache-man
+
+# pnpm
+pnpm add @rawatvaibhavdev/cache-man
+
+# bun
+bun add @rawatvaibhavdev/cache-man</code></pre>
+    </section>
+    <section class="card">
+      <h2>🚀 Quickstart</h2>
+      <pre><code>import { CacheMan } from 'cache-man';
+
+const cache = new CacheMan&lt;string&gt;({ defaultTTL: 5000 });
+cache.set('user:session', 'token_abc');
+console.log(cache.get('user:session'));
+
+// TTL example
+cache.set('temp', 'value', 1000);
+setTimeout(() => console.log(cache.get('temp')), 1100);
+</code></pre>
+    </section>
+    <section class="card">
+      <h2>🛠️ API Reference</h2>
+      <ul>
+        <li><code>new CacheMan&lt;T&gt;(options?)</code></li>
+        <li><code>set(key, value, ttl?)</code></li>
+        <li><code>get(key)</code></li>
+        <li><code>has(key)</code></li>
+        <li><code>delete(key)</code></li>
+        <li><code>clear()</code></li>
+        <li><code>size()</code></li>
+        <li><code>remainingTTL(key)</code></li>
+        <li><code>keys()</code></li>
+        <li><code>values()</code></li>
+        <li><code>getOrSet(key, factory, ttl?)</code></li>
+        <li><code>purgeExpired()</code></li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>💡 Real‑World Scenarios</h2>
+      <p>See the README for detailed examples such as API response caching, rate‑limiting middleware, OTP storage and Chrome extension integration.</p>
+    </section>
+    <section class="card">
+      <h2>📜 License</h2>
+      <p>MIT © <a href="https://github.com/VaibhavRawat27" target="_blank">Vaibhav Rawat</a></p>
+    </section>
+  </main>
+  <footer style="text-align:center;padding:1rem;color:#777;">
+    <a href="https://github.com/VaibhavRawat27/cache-man" target="_blank">GitHub Repo</a>
+  </footer>
+</body>
+</html>

@@ -1,11 +1,17 @@
-# cache-man ⚡️
+# @rawatvaibhavdev/cache-man ⚡️
 
-[![NPM Version](https://img.shields.io/npm/v/cache-man.svg?style=flat-rounded)](https://www.npmjs.com/package/@rawatvaibhavdev/cache-man)
-[![License](https://img.shields.io/npm/l/cache-man.svg?style=flat-rounded)](https://github.com/vaibhavrawat27/cache-man/blob/main/LICENSE)
-[![Bundle Size](https://img.shields.io/bundlephobia/minzip/cache-man?style=flat-rounded)](https://bundlephobia.com/package/@rawatvaibhavdev/cache-man)
-[![Types](https://img.shields.io/npm/types/cache-man?style=flat-rounded)](https://www.npmjs.com/package/@rawatvaibhavdev/cache-man)
+[![NPM Version](https://img.shields.io/npm/v/%40rawatvaibhavdev%2Fcache-man.svg?style=flat-rounded)](https://www.npmjs.com/package/%40rawatvaibhavdev%2Fcache-man)
+[![License](https://img.shields.io/npm/l/%40rawatvaibhavdev%2Fcache-man.svg?style=flat-rounded)](https://github.com/VaibhavRawat27/cache-man/blob/main/LICENSE)
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/%40rawatvaibhavdev%2Fcache-man?style=flat-rounded)](https://bundlephobia.com/package/%40rawatvaibhavdev%2Fcache-man)
+[![Types](https://img.shields.io/npm/types/%40rawatvaibhavdev%2Fcache-man?style=flat-rounded)](https://www.npmjs.com/package/%40rawatvaibhavdev%2Fcache-man)
 
 An ultra-lightweight, zero-dependency, type-safe, in-memory TTL (Time-To-Live) cache library for Node.js and browser environments. Written in TypeScript, compiled to both ES Modules (ESM) and CommonJS (CJS).
+
+---
+
+## 🌐 Documentation (GitHub Pages)
+
+📚 A clean, static documentation site is available at: https://vaibhavrawat27.github.io/cache-man
 
 ---
 
