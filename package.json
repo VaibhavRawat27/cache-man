@@ -1,0 +1,42 @@
+{
+  "name": "@rawatvaibhavdev/cache-man",
+  "version": "1.0.1",
+  "description": "A lightweight, zero-dependency, type-safe in-memory TTL cache for Node.js and browsers.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "keywords": [
+    "cache",
+    "ttl",
+    "in-memory",
+    "browser",
+    "node",
+    "typescript",
+    "zero-dependencies",
+    "lightweight",
+    "lazy-expiration"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}
